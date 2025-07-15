@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Victor Chitole's Portfolio - Creative Designer & Tech Enthusiast" />
+  <meta name="keywords" content="Victor Chitole, Mavinstech, Portfolio, Web Design, Branding, ICT Training" />
+  <meta name="author" content="Victor Chitole" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor | Mavinstech Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-[#5D3A00] text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex justify-between items-center">
+        
+        <!-- Logo + Brand -->
+        <div class="flex items-center space-x-4">
+          <img src="media/pc1.png" alt="Mavinstech Logo" class="h-12 w-12 rounded-full object-cover" />
+          <span class="text-2xl font-bold text-yellow-400"><strong>Mavinstech Portfolio</strong></span>
+        </div>
+
+        <!-- Navigation -->
+        <nav x-data="{ active: 'about' }" class="hidden md:flex space-x-6">
+          <a href="#about" :class="active === 'about' ? 'text-yellow-400' : 'text-white'" @click="active = 'about'">About</a>
+          <a href="#services" :class="active === 'services' ? 'text-yellow-400' : 'text-white'" @click="active = 'services'">Services</a>
+          <a href="#projects" :class="active === 'projects' ? 'text-yellow-400' : 'text-white'" @click="active = 'projects'">Projects</a>
+          <a href="#contact" :class="active === 'contact' ? 'text-yellow-400' : 'text-white'" @click="active = 'contact'">Contact</a>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+</body>
+</html>
+
+<section class="relative text-center py-32 bg-black text-white overflow-hidden">
+
+  <!-- Video Background -->
+  <video id="bgVideo" autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="media/tech video 5.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+  <!-- Content on top -->
+  <div class="relative z-20 px-4">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">  We Are<br>  Creative Designer & Tech Enthusiast</h2>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto">
+      Building brands, websites, and tech solutions that stand out. Let’s bring your vision to life.
+<div 
+  x-data="{
+    services: [
+      'Web designers & Developers',
+      'Branding Masters',
+      'Graphics & Poster Designers',
+      'Smartboard & ICT Trainers',
+      'Kolibri Educational Technology',
+      'Portfolio Developers',
+      'CV Typing & Designers', 
+      'ICT Consultancy',
+    ],
+    currentText: '',
+    currentIndex: 0,
+    charIndex: 0,
+    typing: true,
+    typeSpeed: 100,
+    delay: 2000,
+    startTyping() {
+      setInterval(() => {
+        if (this.typing) {
+          this.currentText = this.services[this.currentIndex].slice(0, this.charIndex++);
+          if (this.charIndex > this.services[this.currentIndex].length) {
+            this.typing = false;
+            setTimeout(() => {
+              this.typing = true;
+              this.charIndex = 0;
+              this.currentIndex = (this.currentIndex + 1) % this.services.length;
+            }, this.delay);
+          }
+        }
+      }, this.typeSpeed);
+    }
+  }"
+  x-init="startTyping"
+  class="text-7xl mt-8 font-extrabold font-algerian text-yellow-300 tracking-wide text-center"
+>
+  <span x-text="currentText"></span><span class="animate-ping">|</span>
+</div>
+
+
+</section>
+
+    </p>
+
+    <!-- Optional animated typing effect -->
+    <!-- You can add a span here and control it via JavaScript -->
+  </div>
+
+</section>
+
+<!-- Slow motion video playback -->
+<script>
+  const bgVideo = document.getElementById('bgVideo');
+  bgVideo.playbackRate = 0.5; // Slows video down to 50%
+</script>
+
+
+  <!-- About -->
+<!-- About -->
+<section id="about" class="py-16 px-6 max-w-6xl mx-auto bg-[#e6d3b3] text-[#3b2e2a] rounded-lg shadow">
+  <div class="flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Image (stays on the left) -->
+    <img src="media/pc2.JPG" alt="media/pc2.JPG" class="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-white">
+
+    <!-- Text Content (moves to the right of image) -->
+    <div class="flex-1 text-left">
+      <h2 class="text-3xl font-bold mb-4">Get to Know Me</h2>
+      <h3 class="text-xl font-semibold mb-2">Victor Chitole</h3>
+      <h5 class="text-lg mb-4">Founder & CEO</h5>
+      <p class="text-lg mb-6">
+I am a creative designer and tech enthusiast with a passion for building brands, 
+websites, and tech solutions that stand out. With expertise in web design, branding, 
+and ICT training, I help businesses and individuals bring their visions to life.
+Mavinstech Solution is a premier digital agency based in Meru, Kenya, committed to delivering
+innovative, high-quality, and tailor-made digital solutions to help businesses, organizations, 
+and individuals thrive in today’s digital-first world. With a relentless passion for creativity 
+and technology, we specialize in Web Design & Development, Graphics Design, Motion Graphics, Branding, Social Media Management, Digital Marketing, Advertising, and ICT Consultancy.
+
+      </p>
+      <a href="#contact" class="bg-yellow-400 text-black px-6 py-3 rounded hover:bg-yellow-500 transition duration-300">
+        Get in Touch
+      </a>
+    </div>
+    
+  </div>
+</section>
+ <!-- Services -->
+<section id="services" class="py-12 px-6 max-w-4xl mx-auto bg-white text-[#3b2e2a] rounded-lg shadow">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8 text-center">Services</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Service 1 -->
+        <div class="bg-blue-400 p-6 rounded shadow text-white text-center">
+          <img src="media/web-design.png" alt="Web Design" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+          <p>Modern, mobile-friendly websites for businesses and individuals.</p>
+          <a href="#" class="text-primary font-medium flex items-center">
+                        Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+                    </a>
+        </div>
+
+      <!-- Service 2 -->
+      <div class="bg-blue-400 p-6 rounded shadow text-white text-center">
+        <img src="media/pic1.jpg" alt="Branding" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Graphics Design</h3>
+        <p>Posters, banners, logos, receipt books, and branding materials.</p>
+        <a href="#" class="text-primary font-medium flex items-center">
+                        Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+                    </a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-blue-400 p-6 rounded shadow text-white text-center">
+        <img src="media/training.png" alt="Training" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Smartboard & Tech Training</h3>
+        <p>Empowering schools and businesses through digital tools.</p>
+        <a href="#" class="text-primary font-medium flex items-center">
+                        Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+                    </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="services" class="py-12 px-6 max-w-4xl mx-auto bg-white text-[#3b2e2a] rounded-lg shadow">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Service 4 -->
+<div class="bg-blue-400 p-6 rounded shadow-lg hover:shadow-xl transition-shadow duration-300 text-white text-center max-w-md mx-auto">
+  <img src="media/training.png" alt="Portfolio Designer" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
+
+  <h3 class="text-2xl font-bold mb-3 leading-tight">
+    Portfolio Designer
+  </h3>
+
+   <p>Modern, mobile-friendly websites for businesses and individuals.</p>
+
+  <a href="#" class="group inline-flex items-center justify-center font-semibold text-white hover:text-yellow-300 transition duration-300">
+    Learn More
+    <i class="ri-arrow-right-line ri-lg ml-2 text-yellow-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
+  </a>
+</div>
+      <!-- Service 5 -->
+  <div class="bg-blue-400 p-6 rounded shadow-lg hover:shadow-xl transition-shadow duration-300 text-white text-center max-w-md mx-auto">
+  <img src="media/training.png" alt="Training" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
+
+  <h3 class="text-2xl font-bold mb-3 leading-tight">
+    IT &amp; Coding Training
+  </h3>
+
+    <p class=>Hands-on courses in coding, productivity tools, and digital skills designed for all skill levels from beginners to advanced professionals.</p>
+
+  <a href="#" class="group inline-flex items-center justify-center font-semibold text-white hover:text-yellow-300 transition duration-300">
+    Learn More
+    <i class="ri-arrow-right-line ri-lg ml-2 text-yellow-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
+  </a>
+</div>
+      <!-- Service 6 -->
+      <div class="bg-blue-400 p-6 rounded shadow-lg hover:shadow-xl transition-shadow duration-300 text-white text-center max-w-md mx-auto">
+  <img src="media/training.png" alt="Training" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
+
+  <h3 class="text-2xl font-bold mb-3 leading-tight">
+  Tech Consulting
+  </h3>
+
+  <p class="text-white text-base leading-relaxed mb-6">
+    Empowering <span class="font-semibold">schools</span> and <span class="font-semibold">businesses</span> through innovative digital tools and engaging tech learning.
+  </p>
+
+  <a href="#" class="group inline-flex items-center justify-center font-semibold text-white hover:text-yellow-300 transition duration-300">
+    Learn More
+    <i class="ri-arrow-right-line ri-lg ml-2 text-yellow-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
+  </a>
+</div>
+
+
+  
+</section>
+  <!-- Activities Showcase -->
+<section id="activities" class="bg-white py-16 px-6 max-w-7xl mx-auto">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold text-gray-900">Activity Showcase</h2>
+    <p class="text-gray-600">Explore our latest trainings, branding events, and outreach work</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Activity 1 -->
+    <div class="bg-brown rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+      <img src="media/Cp.JPG " alt="Smartboard Training" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Smartboard Training – </h3>
+        <p class="text-gray-600 mb-3">Hands-on digital skills training session for teachers in public schools.</p>
+        <div class="text-sm text-[#5D3A00] font-medium">Education / ICT Training / Outreach</div>
+         <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
+          Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+          </a>
+      </div>
+    </div>
+
+    <!-- Activity 2 -->
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+  <img src="https://readdy.ai/api/search-image?query=teenagers%20learning%20digital%20skills%2C%20coding%20on%20computers%2C%20diverse%20group%20of%20students%2C%20modern%20tech%20classroom%20environment%2C%20professional%20educational%20photography&width=400&height=250&seq=5&orientation=landscape" alt="Digital skills" class="w-full h-48 object-cover object-top">
+
+      <div class="p-6">
+        <h3 class="text-xl font-semibold mb-2">Youth ICT Workshop</h3>
+        <p class="text-gray-600 mb-3">Empowered over 30 youth with branding, design, and basic web dev skills.</p>
+        <div class="text-sm text-[#5D3A00] font-medium">Training / Youth / Technology</div>
+         <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
+          Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+         </a>
+      </div>
+    </div>
+
+    <!-- Activity 3 -->
+ <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+<img src="media/p14.jpg" alt="virtual training" class="w-full h-48 object-cover object-top">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Virtual Training</h3>
+                        <p class="text-gray-700 mb-4">Live, remote tech lessons tailored to your needs, allowing flexible learning from anywhere with expert instructors and interactive sessions.</p>
+                         <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
+                          Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+                         </a>
+                    </div>
+                </div>
+<!-- Activity 3 -->
+   <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+  <img src="media/tech-consulting.jpg" alt="Tech Consulting" class="w-full h-48 object-contain bg-black">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold text-gray-900 mb-3">Tech Consulting</h3>
+    <p class="text-gray-700 mb-4">
+      Strategic guidance and expert advice to help you choose, implement, and scale the right technology solutions for your organization.
+    </p>
+     <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
+
+    <!-- Activity 4 -->
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+       <img src="https://readdy.ai/api/search-image?query=students%20using%20Kolibri%20educational%20platform%20on%20tablets%20in%20classroom%20with%20limited%20internet%20connectivity%2C%20diverse%20group%20of%20learners%2C%20educational%20technology%20in%20action&width=400&height=250&seq=4&orientation=landscape" alt="Kolibri platform" class="w-full h-48 object-cover object-top">
+                    <div class="p-6">
+                        <div class="text-sm text-gray-500 mb-2">May 28, 2025</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">What is Kolibri and Why It Matters</h3>
+                        <p class="text-gray-700 mb-4">Learn about Kolibri, the offline-first educational platform that's bringing digital learning to areas with limited internet connectivity.</p>
+                       <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
+                         Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+    <!-- Activity 5 -->
+ 
+     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+  <img src="media/pic1.jpg" alt="Graphics Design" class="w-full h-48 object-contain bg-black">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold text-gray-900 mb-3">Graphics Design</h3>
+    <p class="text-gray-700 mb-4">
+      Professional posters, logos, and educational content visuals created by our expert designers to enhance your brand and learning materials.
+    </p>
+    <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
+
+    <!-- Add more activities as needed -->
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-blue-600 text-white px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      
+    <a href="https://wa.me/+254740163974" target="_blank" rel="noopener noreferrer"
+    class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-lg transition duration-300 ease-in-out">
+   <i class="fab fa-whatsapp text-2xl"></i>
+  <span class="font-medium text-base">WhatsApp Me</span>
+
+</a>
+
+
+<select name="project" required
+  class="w-full p-3 mb-4 rounded border border-gray-300 text-black">
+  <option value="" disabled selected><strong>What project do you need?</strong></option>
+  <option value="Website Design">Website Design</option>
+  <option value="Logo Design">Logo Design</option>
+  <option value="Printing Services">Printing Services</option>
+  <option value="Smartboard Training">Smartboard Training</option>
+  <option value="Kolibri Setup">Kolibri Training & Setup</option>
+  <option value="Other">Other (Specify in message)</option>
+</select>
+
+      <!-- ✅ Load Tailwind CSS (if not already loaded) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- ✅ Contact Form -->
+<form
+  action="https://formspree.io/f/mpwrvozk"
+  method="POST"
+  class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md space-y-4"
+>
+  <h2 class="text-2xl font-bold text-gray-800">Contact Me</h2>
+
+  <!-- Email Field -->
+  <label class="block">
+    <span class="text-gray-700">Your Email:</span>
+    <input
+      type="email"
+      name="email"
+      required
+      class="mt-1 w-full p-3 border border-gray-300 rounded text-black bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
+    />
+  </label>
+
+  <!-- Message Field -->
+  <label class="block">
+    <span class="text-gray-700">Your Message:</span>
+    <textarea
+      name="message"
+      rows="5"
+      required
+      class="mt-1 w-full p-3 border border-gray-300 rounded text-black bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
+    ></textarea>
+  </label>
+
+  <!-- Submit Button -->
+  <button
+    type="submit"
+    class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded transition duration-200"
+  >
+    Send Message
+  </button>
+</form>
+      <p class="mt-10 text-lg"><strong>Alternatively,</strong> you can reach me at:</p>
+      <p class="text-lg"><strong>Email:</strong> <a href="mailto:mavinstechsolution@gmail.com">mavinstechsolution@gmail.com</a></p>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright Mavins Victor © 2025. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
