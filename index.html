@@ -154,92 +154,179 @@ and technology, we specialize in Web Design & Development, Graphics Design, Moti
     <div class="grid md:grid-cols-3 gap-6">
 
         <!-- Service 1 -->
-        <div class="bg-blue-400 p-6 rounded shadow text-white text-center">
-          <img src="media/web-design.png" alt="Web Design" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
-          <h3 class="text-xl font-semibold mb-2">Web Design</h3>
-          <p>Modern, mobile-friendly websites for businesses and individuals.</p>
-          <a href="#" class="text-primary font-medium flex items-center">
-                        Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
-                    </a>
-        </div>
+         <!-- Web Design Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+  <img src="media/web-design.jpg" alt="Web Design" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+    <p class="text-gray-600 mb-3">
+      Modern, mobile-friendly websites for businesses and individuals.
+    </p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Web Development / UI/UX / Branding</div>
+    <a href="#" onclick="document.getElementById('webModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Modal for Web Design -->
+<div id="webModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('webModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">About Our Web Design  & Portfolio Designe Services</h2>
+    <p class="text-gray-700 mb-3">
+      Mavinstech Solution creates sleek, responsive websites tailored to meet the specific goals of our clients — whether you're a business, school, organization, or individual.
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Mobile-first responsive design</li>
+      <li>Optimized for speed and performance</li>
+      <li>Clean, modern, and branded layout</li>
+      <li>Integrated features like contact forms, portfolios, and social media</li>
+    </ul>
+    <p class="text-gray-700">
+      Let us help you establish a professional online presence with a custom website that reflects your mission and engages your audience.
+    </p>
+  </div>
+</div>
 
       <!-- Service 2 -->
-      <div class="bg-blue-400 p-6 rounded shadow text-white text-center">
-        <img src="media/pic1.jpg" alt="Branding" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
-        <h3 class="text-xl font-semibold mb-2">Graphics Design</h3>
-        <p>Posters, banners, logos, receipt books, and branding materials.</p>
-        <a href="#" class="text-primary font-medium flex items-center">
-                        Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
-                    </a>
-      </div>
+      <!-- Graphics Design Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+  <img src="media/graphics-design.jpg" alt="Graphics Design" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Graphics Design</h3>
+    <p class="text-gray-600 mb-3">
+      Posters, banners, logos, receipt books, and branding materials.
+    </p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Design / Branding / Print</div>
+    <a href="#" onclick="document.getElementById('graphicsModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Modal for Graphics Design -->
+<div id="graphicsModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('graphicsModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">Graphics Design Services</h2>
+    <p class="text-gray-700 mb-3">
+      Mavinstech Solution provides high-quality graphic design services to elevate your brand. Whether you're running a business, school, or event, we create compelling visual content to help you communicate effectively.
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Event & product posters</li>
+      <li>Business logos & brand identity</li>
+      <li>Branded receipt books</li>
+      <li>Banners and signages</li>
+    </ul>
+    <p class="text-gray-700">
+      Each design is tailored to match your goals and message. Let's bring your ideas to life with creativity and precision.
+    </p>
+  </div>
+</div>
+
 
       <!-- Service 3 -->
-      <div class="bg-blue-400 p-6 rounded shadow text-white text-center">
-        <img src="media/training.png" alt="Training" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
-        <h3 class="text-xl font-semibold mb-2">Smartboard & Tech Training</h3>
-        <p>Empowering schools and businesses through digital tools.</p>
-        <a href="#" class="text-primary font-medium flex items-center">
-                        Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
-                    </a>
-      </div>
-
-    </div>
+      <!-- Kolibri Service Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+  <img src="media/kolibri-platform.jpg" alt="Kolibri Platform" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Kolibri Platform</h3>
+    <p class="text-gray-600 mb-3">
+      Bringing digital learning offline to areas with limited internet.
+    </p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Offline Learning / EdTech / Community</div>
+    <a href="#" onclick="document.getElementById('kolibriModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
   </div>
-</section>
-<section id="services" class="py-12 px-6 max-w-4xl mx-auto bg-white text-[#3b2e2a] rounded-lg shadow">
-  <div class="max-w-6xl mx-auto">
-    <div class="grid md:grid-cols-3 gap-6">
-
-        <!-- Service 4 -->
-<div class="bg-blue-400 p-6 rounded shadow-lg hover:shadow-xl transition-shadow duration-300 text-white text-center max-w-md mx-auto">
-  <img src="media/training.png" alt="Portfolio Designer" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
-
-  <h3 class="text-2xl font-bold mb-3 leading-tight">
-    Portfolio Designer
-  </h3>
-
-   <p>Modern, mobile-friendly websites for businesses and individuals.</p>
-
-  <a href="#" class="group inline-flex items-center justify-center font-semibold text-white hover:text-yellow-300 transition duration-300">
-    Learn More
-    <i class="ri-arrow-right-line ri-lg ml-2 text-yellow-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
-  </a>
-</div>
-      <!-- Service 5 -->
-  <div class="bg-blue-400 p-6 rounded shadow-lg hover:shadow-xl transition-shadow duration-300 text-white text-center max-w-md mx-auto">
-  <img src="media/training.png" alt="Training" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
-
-  <h3 class="text-2xl font-bold mb-3 leading-tight">
-    IT &amp; Coding Training
-  </h3>
-
-    <p class=>Hands-on courses in coding, productivity tools, and digital skills designed for all skill levels from beginners to advanced professionals.</p>
-
-  <a href="#" class="group inline-flex items-center justify-center font-semibold text-white hover:text-yellow-300 transition duration-300">
-    Learn More
-    <i class="ri-arrow-right-line ri-lg ml-2 text-yellow-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
-  </a>
-</div>
-      <!-- Service 6 -->
-      <div class="bg-blue-400 p-6 rounded shadow-lg hover:shadow-xl transition-shadow duration-300 text-white text-center max-w-md mx-auto">
-  <img src="media/training.png" alt="Training" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover shadow-md">
-
-  <h3 class="text-2xl font-bold mb-3 leading-tight">
-  Tech Consulting
-  </h3>
-
-  <p class="text-white text-base leading-relaxed mb-6">
-    Empowering <span class="font-semibold">schools</span> and <span class="font-semibold">businesses</span> through innovative digital tools and engaging tech learning.
-  </p>
-
-  <a href="#" class="group inline-flex items-center justify-center font-semibold text-white hover:text-yellow-300 transition duration-300">
-    Learn More
-    <i class="ri-arrow-right-line ri-lg ml-2 text-yellow-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"></i>
-  </a>
 </div>
 
+<!-- Kolibri Modal -->
+<div id="kolibriModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('kolibriModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">Kolibri Platform – Offline Education That Works</h2>
+    <p class="text-gray-700 mb-3">
+      Kolibri is a free, open-source platform designed to make quality educational content accessible without internet. Ideal for remote schools, refugee camps, and underserved communities.
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Works fully offline after initial setup</li>
+      <li>Includes interactive lessons, videos, quizzes, and tracking tools</li>
+      <li>Customizable to local curriculum and languages</li>
+      <li>Runs on low-cost hardware like Raspberry Pi or old PCs</li>
+    </ul>
+    <p class="text-gray-700">
+      Mavinstech Solution offers complete Kolibri deployments—installation, teacher training, and content customization to help learners thrive even in low-resource environments.
+    </p>
+  </div>
+</div>
+ <!-- Service 4 -->
+  <!-- Smartboard & Tech Training Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+  <img src="media/smartboard-training.jpg" alt="Smartboard Training" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Smartboard & Tech Training</h3>
+    <p class="text-gray-600 mb-3">
+      Empowering schools and businesses through digital tools.
+    </p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Education / ICT / EdTech</div>
+    <a href="#" onclick="document.getElementById('smartboardModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
 
-  
+<!-- Smartboard Modal -->
+<div id="smartboardModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('smartboardModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">Smartboard & Technology Training</h2>
+    <p class="text-gray-700 mb-3">
+      Our digital literacy and Smartboard training empowers educators and institutions to embrace modern classroom tools effectively. This includes hands-on sessions covering:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Interactive Smartboard use</li>
+      <li>Digital lesson preparation</li>
+      <li>Use of Google Workspace for education</li>
+      <li>Tech tips for classroom engagement</li>
+    </ul>
+    <p class="text-gray-700">We support both beginner and intermediate users in maximizing the impact of digital teaching.</p>
+  </div>
+</div>
+      <!-- IT & Coding Training Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto mt-6">
+  <img src="media/it-coding-training.jpg" alt="IT & Coding Training" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">IT & Coding Training</h3>
+    <p class="text-gray-600 mb-3">
+      Hands-on courses in coding, productivity tools, and digital skills for all levels.
+    </p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">ICT / Programming / Skills Training</div>
+    <a href="#" onclick="document.getElementById('codingModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
+
+<!-- IT & Coding Modal -->
+<div id="codingModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('codingModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">IT & Coding Training</h2>
+    <p class="text-gray-700 mb-3">
+      From basic computer literacy to advanced web development, our training programs are structured to empower learners at every stage. We cover:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>HTML, CSS & JavaScript for beginners</li>
+      <li>Google Workspace for productivity</li>
+      <li>Graphic design basics with Canva</li>
+      <li>Project-based learning approach</li>
+    </ul>
+    <p class="text-gray-700">Participants receive practical skills, certificates, and ongoing mentorship opportunities.</p>
+  </div>
+</div>
+
 </section>
   <!-- Activities Showcase -->
 <section id="activities" class="bg-white py-16 px-6 max-w-7xl mx-auto">
@@ -250,83 +337,209 @@ and technology, we specialize in Web Design & Development, Graphics Design, Moti
 
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
     <!-- Activity 1 -->
-    <div class="bg-brown rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-      <img src="media/Cp.jpg " alt="Smartboard Training" class="w-full h-48 object-cover">
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Smartboard Training – </h3>
-        <p class="text-gray-600 mb-3">Hands-on digital skills training session for teachers in public schools.</p>
-        <div class="text-sm text-[#5D3A00] font-medium">Education / ICT Training / Outreach</div>
-         <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
-          Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
-          </a>
-      </div>
-    </div>
+    <!-- Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+  <img src="media/Cp.JPG" alt="Smartboard Training" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Smartboard Training –</h3>
+    <p class="text-gray-600 mb-3">Hands-on digital skills training session for teachers in public schools.</p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Education / ICT Training / Outreach</div>
+    <a href="#" onclick="document.getElementById('smartboardModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="smartboardModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('smartboardModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">Smartboard Training Details</h2>
+    <p class="text-gray-700 mb-3">
+      Our Smartboard Training is designed to empower teachers with hands-on experience in using interactive whiteboard technology. The session includes:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Practical use of Smartboard features</li>
+      <li>Interactive lesson planning and delivery</li>
+      <li>Collaborative classroom engagement techniques</li>
+      <li>Live demonstrations and Q&A sessions</li>
+    </ul>
+    <p class="text-gray-700">Participants receive digital resources and certification upon completion.</p>
+  </div>
+</div>
 
     <!-- Activity 2 -->
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+     <!-- Youth ICT Workshop Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
   <img src="https://readdy.ai/api/search-image?query=teenagers%20learning%20digital%20skills%2C%20coding%20on%20computers%2C%20diverse%20group%20of%20students%2C%20modern%20tech%20classroom%20environment%2C%20professional%20educational%20photography&width=400&height=250&seq=5&orientation=landscape" alt="Digital skills" class="w-full h-48 object-cover object-top">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Youth ICT Workshop</h3>
+    <p class="text-gray-600 mb-3">Empowered over 30 youth with branding, design, and basic web dev skills.</p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Training / Youth / Technology</div>
+    <a href="#" onclick="document.getElementById('youthModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
 
-      <div class="p-6">
-        <h3 class="text-xl font-semibold mb-2">Youth ICT Workshop</h3>
-        <p class="text-gray-600 mb-3">Empowered over 30 youth with branding, design, and basic web dev skills.</p>
-        <div class="text-sm text-[#5D3A00] font-medium">Training / Youth / Technology</div>
-         <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
-          Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
-         </a>
-      </div>
-    </div>
+<!-- Modal -->
+<div id="youthModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('youthModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">Youth ICT Workshop Details</h2>
+    <p class="text-gray-700 mb-3">
+      This hands-on workshop provided over 30 youth with practical skills in:
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Personal and business branding</li>
+      <li>Basic graphic design using modern tools</li>
+      <li>Introduction to HTML & CSS for web development</li>
+      <li>Team projects and portfolio building</li>
+    </ul>
+    <p class="text-gray-700">The session encouraged creativity, innovation, and career-readiness in the digital space.</p>
+  </div>
+</div>
+
 
     <!-- Activity 3 -->
- <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-<img src="media/p14.jpg" alt="virtual training" class="w-full h-48 object-cover object-top">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Virtual Training</h3>
-                        <p class="text-gray-700 mb-4">Live, remote tech lessons tailored to your needs, allowing flexible learning from anywhere with expert instructors and interactive sessions.</p>
-                         <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
-                          Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
-                         </a>
-                    </div>
-                </div>
-<!-- Activity 3 -->
-   <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-  <img src="media/tech-consulting.jpg" alt="Tech Consulting" class="w-full h-48 object-contain bg-black">
+  <!-- Virtual Training Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+  <img src="media/p14.jpg" alt="virtual training" class="w-full h-48 object-cover object-top">
   <div class="p-6">
-    <h3 class="text-xl font-semibold text-gray-900 mb-3">Tech Consulting</h3>
-    <p class="text-gray-700 mb-4">
-      Strategic guidance and expert advice to help you choose, implement, and scale the right technology solutions for your organization.
-    </p>
-     <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
+    <h3 class="text-xl font-semibold mb-2">Virtual Training</h3>
+    <p class="text-gray-600 mb-3">Live, remote tech lessons tailored to your needs, with expert instructors and interactive sessions.</p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Tech Lessons / Remote Learning / ICT</div>
+    <a href="#" onclick="document.getElementById('virtualModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
       Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
     </a>
   </div>
 </div>
 
-    <!-- Activity 4 -->
-     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-       <img src="https://readdy.ai/api/search-image?query=students%20using%20Kolibri%20educational%20platform%20on%20tablets%20in%20classroom%20with%20limited%20internet%20connectivity%2C%20diverse%20group%20of%20learners%2C%20educational%20technology%20in%20action&width=400&height=250&seq=4&orientation=landscape" alt="Kolibri platform" class="w-full h-48 object-cover object-top">
-                    <div class="p-6">
-                        <div class="text-sm text-gray-500 mb-2">May 28, 2025</div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-3">What is Kolibri and Why It Matters</h3>
-                        <p class="text-gray-700 mb-4">Learn about Kolibri, the offline-first educational platform that's bringing digital learning to areas with limited internet connectivity.</p>
-                       <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
-                         Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-    <!-- Activity 5 -->
- 
-     <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-  <img src="media/pic1.jpg" alt="Graphics Design" class="w-full h-48 object-contain bg-black">
-  <div class="p-6">
-    <h3 class="text-xl font-semibold text-gray-900 mb-3">Graphics Design</h3>
-    <p class="text-gray-700 mb-4">
-      Professional posters, logos, and educational content visuals created by our expert designers to enhance your brand and learning materials.
+<!-- Modal -->
+<div id="virtualModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('virtualModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">Virtual Training Details</h2>
+    <p class="text-gray-700 mb-3">
+      Our Virtual Training program brings tech skills to you — wherever you are. Delivered live by professional instructors, these sessions are designed to be flexible, interactive, and personalized.
     </p>
-    <a href="#" class="text-primary font-medium flex items-center hover:text-yellow-500 transition">
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Remote sessions on web design, branding, digital literacy & more</li>
+      <li>Ideal for individuals, schools, and organizations</li>
+      <li>Access recorded sessions for future reference</li>
+      <li>Certificate of participation available</li>
+    </ul>
+    <p class="text-gray-700">Perfect for learners in remote areas or busy professionals looking to upskill from home.</p>
+  </div>
+</div>
+
+<!-- Activity 3 -->
+   <!-- Tech Consulting Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+  <img src="media/tech-consulting.jpg" alt="Tech Consulting" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Tech Consulting</h3>
+    <p class="text-gray-600 mb-3">
+      Strategic guidance and expert advice to help you choose, implement, and scale the right technology solutions.
+    </p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Consulting / ICT Strategy / Growth</div>
+    <a href="#" onclick="document.getElementById('consultingModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
       Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
     </a>
   </div>
 </div>
+
+<!-- Modal -->
+<div id="consultingModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('consultingModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">Tech Consulting Details</h2>
+    <p class="text-gray-700 mb-3">
+      Our Tech Consulting services help organizations and institutions unlock the full potential of technology to achieve their goals.
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>IT strategy planning and project management</li>
+      <li>Infrastructure and software advisory</li>
+      <li>Solutions tailored to schools, NGOs, startups & SMEs</li>
+      <li>Support in implementation, training, and scaling</li>
+    </ul>
+    <p class="text-gray-700">Let us help you turn ideas into action with expert guidance at every step.</p>
+  </div>
+</div>
+
+
+    <!-- Activity 4 -->
+          <!-- Kolibri Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+   <img src="https://readdy.ai/api/search-image?query=students%20using%20Kolibri%20educational%20platform%20on%20tablets%20in%20classroom%20with%20limited%20internet%20connectivity%2C%20diverse%20group%20of%20learners%2C%20educational%20technology%20in%20action&width=400&height=250&seq=4&orientation=landscape" alt="Kolibri platform" class="w-full h-48 object-cover object-top">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">What is Kolibri and Why It Matters</h3>
+    <p class="text-gray-600 mb-3">
+      Learn about Kolibri, the offline-first educational platform bringing digital learning to areas with limited connectivity.
+    </p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">EdTech / Offline Learning / Community Impact</div>
+    <a href="#" onclick="document.getElementById('kolibriModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="kolibriModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('kolibriModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">About Kolibri</h2>
+    <p class="text-gray-700 mb-3">
+      Kolibri is a free, open-source educational platform designed for offline use in schools, libraries, and community centers. It enables learners to access a rich library of high-quality content, including videos, exercises, and lessons — even without internet access.
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Ideal for remote areas with limited or no connectivity</li>
+      <li>Includes content from Khan Academy, CK-12, and more</li>
+      <li>Customizable for local curricula and languages</li>
+      <li>Supports self-paced, blended, and group learning</li>
+    </ul>
+    <p class="text-gray-700">
+      Kolibri helps bridge the digital divide by making learning accessible to everyone, everywhere.
+    </p>
+  </div>
+</div>
+
+    <!-- Activity 5 -->
+  <!-- Graphics Design Card -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition max-w-sm mx-auto">
+  <img src="media/pic1.jpg" alt="Graphics Design" class="w-full h-48 object-cover">
+  <div class="p-6">
+    <h3 class="text-xl font-semibold mb-2">Graphics Design</h3>
+    <p class="text-gray-600 mb-3">
+      Professional posters, logos, and educational content visuals created by our expert designers to enhance your brand and learning materials.
+    </p>
+    <div class="text-sm text-[#5D3A00] font-medium mb-3">Design / Branding / Education</div>
+    <a href="#" onclick="document.getElementById('designModal').style.display='flex'" class="text-blue-600 font-medium flex items-center hover:text-yellow-500 transition">
+      Learn More <i class="ri-arrow-right-line ri-lg ml-1"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="designModal" class="fixed inset-0 hidden bg-black bg-opacity-50 justify-center items-center z-50">
+  <div class="bg-white rounded-lg p-6 w-11/12 max-w-xl relative">
+    <button onclick="document.getElementById('designModal').style.display='none'" class="absolute top-2 right-4 text-gray-600 text-2xl">&times;</button>
+    <h2 class="text-xl font-bold mb-3 text-gray-800">About Our Graphics Design Services</h2>
+    <p class="text-gray-700 mb-3">
+      At Mavinstech Solution, we offer high-quality graphic design services to help institutions, schools, and businesses communicate effectively through visual storytelling.
+    </p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li>Custom logo creation to match your identity</li>
+      <li>Poster and banner designs for events and promotions</li>
+      <li>Educational visuals to support learning content</li>
+      <li>Social media templates and branding kits</li>
+    </ul>
+    <p class="text-gray-700">
+      Every design is tailored to fit your brand, audience, and goals — ensuring visual impact and clarity.
+    </p>
+  </div>
+</div>
+
 
     <!-- Add more activities as needed -->
   </div>
