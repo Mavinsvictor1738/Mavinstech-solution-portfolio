@@ -625,10 +625,35 @@ Digital Marketing, and ICT Consultancy — all driven by creativity, innovation,
 
 </a>
 
+<!-- Booking Section -->
+<section id="booking" class="py-16 px-6 bg-[#f3f3f3] text-gray-800">
+  <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-bold mb-6 text-center text-[#5D3A00]">Book a Session</h2>
+    
+    <form action="https://formspree.io/f/mpwrvozk" method="POST" class="space-y-6">
+      <!-- Full Name -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Full Name:</label>
+        <input type="text" name="name" required class="w-full p-3 border border-gray-300 rounded bg-white text-black" />
+      </div>
 
-<select name="Service" required
-  class="w-full p-3 mb-4 rounded border border-gray-300 text-black">
-  <option value="" disabled selected>Select a Service</option>
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Email Address:</label>
+        <input type="email" name="email" required class="w-full p-3 border border-gray-300 rounded bg-white text-black" />
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Phone Number (Optional):</label>
+        <input type="tel" name="phone" class="w-full p-3 border border-gray-300 rounded bg-white text-black" />
+      </div>
+
+      <!-- Choose Service -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Select Service:</label>
+        <select name="service" required class="w-full p-3 border border-gray-300 rounded bg-white text-black">
+          <option value="" disabled selected>-- Choose a service --</option>
   <option value="Website Design">Website Design & Development</option>
   <option value="Logo Design">Logo & Brand Identity Design</option>
   <option value="Printing Services">Printing & Branding Services</option>
@@ -640,50 +665,28 @@ Digital Marketing, and ICT Consultancy — all driven by creativity, innovation,
   <option value="Banner Design">Banner Design (with Stand)</option>
   <option value="Graphics Design">General Graphics Design</option>
   <option value="Other">Other (Specify in message)</option>
-</select>
+        </select>
+      </div>
 
+      <!-- Date/Time -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Preferred Date:</label>
+        <input type="date" name="date" required class="w-full p-3 border border-gray-300 rounded bg-white text-black" />
+      </div>
 
-      <!-- ✅ Load Tailwind CSS (if not already loaded) -->
-<script src="https://cdn.tailwindcss.com"></script>
+      <!-- Message -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Additional Details (optional):</label>
+        <textarea name="message" rows="4" class="w-full p-3 border border-gray-300 rounded bg-white text-black"></textarea>
+      </div>
 
-<!-- ✅ Contact Form -->
-<form
-  action="https://formspree.io/f/mpwrvozk"
-  method="POST"
-  class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md space-y-4"
->
-  <h2 class="text-2xl font-bold text-gray-800">Contact Me</h2>
-
-  <!-- Email Field -->
-  <label class="block">
-    <span class="text-gray-700">Your Email:</span>
-    <input
-      type="email"
-      name="email"
-      required
-      class="mt-1 w-full p-3 border border-gray-300 rounded text-black bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
-    />
-  </label>
-
-  <!-- Message Field -->
-  <label class="block">
-    <span class="text-gray-700">Your Message:</span>
-    <textarea
-      name="message"
-      rows="5"
-      required
-      class="mt-1 w-full p-3 border border-gray-300 rounded text-black bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
-    ></textarea>
-  </label>
-
-  <!-- Submit Button -->
-  <button
-    type="submit"
-    class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded transition duration-200"
-  >
-    Send Message
-  </button>
-</form>
+      <!-- Submit Button -->
+      <button type="submit" class="w-full bg-[#5D3A00] hover:bg-yellow-500 text-white font-bold py-3 px-6 rounded transition duration-300">
+        Submit Booking
+      </button>
+    </form>
+  </div>
+</section>
       <p class="mt-10 text-lg"><strong>Alternatively,</strong> you can reach me at:</p>
       <p class="text-lg"><strong>Email:</strong> <a href="mailto:mavinstechsolution@gmail.com">mavinstechsolution@gmail.com</a></p>
 
