@@ -630,7 +630,7 @@ Digital Marketing, and ICT Consultancy — all driven by creativity, innovation,
   <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
     <h2 class="text-3xl font-bold mb-6 text-center text-[#5D3A00]">Book a Session</h2>
     
-    <form action="https://formspree.io/f/mpwrvozk" method="POST" class="space-y-6">
+    <form id="bookingForm" class="space-y-6">
       <!-- Full Name -->
       <div>
         <label class="block text-sm font-medium mb-1">Full Name:</label>
@@ -688,6 +688,26 @@ Digital Marketing, and ICT Consultancy — all driven by creativity, innovation,
     </form>
   </div>
 </section>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Replace with your WhatsApp number (in international format, no plus signs or spaces)
+  let phoneNumber = "254712345678";
+
+  let name = document.querySelector("[name='name']").value;
+  let email = document.querySelector("[name='email']").value;
+  let phone = document.querySelector("[name='phone']").value || "Not provided";
+  let service = document.querySelector("[name='service']").value;
+  let date = document.querySelector("[name='date']").value;
+  let message = document.querySelector("[name='message']").value || "No additional details";
+
+  let whatsappMessage = `Hello, I want to book a session.%0A%0A*Full Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Service:* ${service}%0A*Preferred Date:* ${date}%0A*Details:* ${message}`;
+
+  window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
+});
+</script>
 
       <p class="mt-10 text-lg"><strong>Alternatively,</strong> you can reach me at:</p>
       <p class="text-lg"><strong>Email:</strong> <a href="mailto:mavinstechsolution@gmail.com">mavinstechsolution@gmail.com</a></p>
